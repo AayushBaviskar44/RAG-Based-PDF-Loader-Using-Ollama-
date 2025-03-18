@@ -1,0 +1,10 @@
+!pip install langchain
+!pip install chromadb
+!pip install pypdf
+!pip install langchain_community
+!pip install requests
+!pip install transformers
+!pip install sentencepiece
+!pip install accelerate
+!pip install bitsandbytes
+!pip install faiss-cpu
