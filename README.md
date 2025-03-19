@@ -1,32 +1,16 @@
-**RAG-Based Resume & JD Question Generator**
-
 **Overview**
+This project implements a Retrieval-Augmented Generation (RAG) model using the Llama model to automate the process of generating interview questions. The model scrapes data from resumes and job descriptions (JDs) to generate tailored, role-specific questions. If resumes or job descriptions are unavailable and the candidate only provides the role title, the model uses preset job descriptions and integrates with ChatGPT to generate relevant questions.
 
-This project implements a Retrieval-Augmented Generation (RAG) model to generate interview questions based on job descriptions (JD) and resumes. It incorporates a weighted logic system to balance inputs dynamically and provides fallback mechanisms when JD and Resume data are unavailable.
+**Key Features**
+Data Scraping: Extracts information from resumes and job descriptions for processing.
+Question Generation: Automatically generates relevant interview questions based on scraped data.
+Fallback Mechanism: If no resume or job description is provided, the model uses preset JDs based on role titles to generate questions.
+ChatGPT Integration: Uses ChatGPT to create meaningful and contextually appropriate questions when only the role title is available.
 
-**Features**
-	•	Dynamic Question Generation: Generates relevant interview questions based on the provided JD and resume.
- 
-	•	Weighted Logic System: Adjusts question relevance dynamically when either the JD or resume is missing.
- 
-	•	Fallback Mechanisms: Fetches preset or API-generated questions when JD and resume are unavailable.
- 
-	•	Multi-Role Support: Automates question generation for roles including:
-	•	Software Development Engineer (SDE)
-	•	Data Scientist
-	•	Front-End Developer
-	•	Back-End Developer
-	•	Data Analyst
-	•	Digital Marketing
- 
-	•	Technology Stack: Utilizes Ollama, LLaMA models, and Python for efficient document processing and question generation.
+**Technologies Used**
+Llama: Used for fine-tuning and model training.
+ChatGPT: Integrated for context-based question generation.
+Python: Core programming language for implementation.
+NLP (Natural Language Processing): For data extraction and question generation.
+Machine Learning: For model training and optimization.
 
-Installation
-
-Prerequisites
-
-Ensure you have the following installed:
-	•	Python 3.8+
-	•	Ollama
-	•	LLaMA models
-	•	OpenAI API (optional, for fallback question generation)
